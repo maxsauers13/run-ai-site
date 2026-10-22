@@ -4,33 +4,71 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy</title>
-<style>body { max-width: 720px; margin: 20px auto; padding: 0 16px; }</style>
+<style>
+body { max-width: 720px; margin: 20px auto; padding: 0 16px; font-family: system-ui, sans-serif; line-height: 1.5; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; vertical-align: top; }
+.ai { border: 2px solid #333; padding: 4px 16px; margin: 16px 0; }
+</style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p>Effective October 16, 2026. This policy covers the run-ai text-message service operated by Max Sauers LLC ("we", "us").</p>
+<p>Effective October 22, 2026. This policy covers Kip (formerly run-ai), a text-message running service operated by Max Sauers LLC ("we", "us"). Kip is invite-only.</p>
 
 <h2>What we collect</h2>
 <ul>
-<li>Your mobile phone number, so we can reply to you.</li>
-<li>The text messages you send us and the replies we send you.</li>
-<li>Running activity data you choose to upload or connect, such as workout files from your watch: distance, time, pace, heart rate, cadence, power, and location recorded during runs.</li>
-<li>Rules and preferences you tell the service, such as which days you run.</li>
-<li>Your email address if you sign in to the website.</li>
+<li><strong>Your phone number</strong> and the date you opted in to texts, so we can reply and keep a record of your consent.</li>
+<li><strong>Your messages</strong> to Kip and Kip's replies.</li>
+<li><strong>Your name, email and home city</strong>, which you give by text. Your city sets your time zone and weather.</li>
+<li><strong>Running data from your watch account, once you connect it (COROS or Garmin):</strong> your activities and their workout files, with distance, time, pace, heart rate, cadence, power and the GPS route of each run, and the name of the device that recorded them.</li>
+<li><strong>Your watch account authorization:</strong> a token COROS or Garmin gives us when you approve the connection, and your Garmin user ID. We never see your COROS or Garmin password.</li>
+<li><strong>Calendar information</strong>, only if you connect a calendar: the times you are busy and the titles of those events, read-only. We never change your calendar.</li>
+<li><strong>What Kip learns or you tell it:</strong> your rules and preferences, your weekly targets and plans, and patterns computed from your runs (your usual paces and weekly shape, and an approximate home location, rounded to about 1 km, from where your runs start).</li>
 </ul>
 
 <h2>How we use it</h2>
-<p>Only to provide the service to you: analysing your runs, answering your questions, and planning your week. Your messages and running data may be processed by an AI model provider to generate replies.</p>
+<p>Only to provide Kip to you: analysing your runs, answering your questions, planning your week around your calendar and the weather, and sending the texts you signed up for. We look at messages and logs only to fix problems and improve how Kip answers you.</p>
 
-<h2>What we do not do</h2>
-<p>We do not sell or share your SMS opt-in data or personal information with third parties for marketing purposes. We do not use your data for advertising. We do not share your data with anyone except the service providers needed to run the service (the messaging carrier and the AI model provider), and only to the extent needed to deliver it.</p>
+<div class="ai">
+<h2>AI transparency statement</h2>
+<ul>
+<li><strong>What AI does here:</strong> Kip's replies are written by an AI model, Claude, from Anthropic. To write a reply, Kip sends Claude your message and the data needed to answer it: your recent runs and their details (including Garmin or COROS data), your rules, your plan, and the forecast. Kip's run analysis, weekly patterns and plan are computed by our own code; Claude puts them into words and answers your questions about them.</li>
+<li><strong>Why:</strong> so you can ask about your running in your own words and get a short, specific answer by text.</li>
+<li><strong>No AI training:</strong> we do not use your data, or anything derived from it, to train, evaluate or improve AI models, and we do not allow our providers to. Anthropic processes it only to produce Kip's replies.</li>
+<li><strong>Your consent:</strong> before Kip processes your running data with AI, it asks for your explicit OK by text, and does nothing with your running data until you reply AGREE.</li>
+<li><strong>Withdrawing consent, any time:</strong> text <strong>"delete my data"</strong> to withdraw consent completely and have everything deleted, or <strong>"disconnect garmin"</strong> (or "disconnect coros") to stop Kip receiving new data from that account. You can also remove Kip from your Garmin Connect or COROS account settings.</li>
+</ul>
+</div>
 
-<h2>Keeping and deleting data</h2>
-<p>We keep your data while you use the service. Text STOP to stop receiving messages. To have your account and data deleted, email the address below and we will confirm when it is done.</p>
+<h2>Who receives or processes your data</h2>
+<p>Only the services Kip needs to run, and only what each needs. Garmin and COROS data goes only to the services marked below.</p>
+<table>
+<tr><th>Service</th><th>What it gets</th><th>Why</th></tr>
+<tr><td>Anthropic (Claude)</td><td>Your messages and the running data needed to answer them, including Garmin and COROS data</td><td>Writes Kip's replies (AI)</td></tr>
+<tr><td>Amazon Web Services</td><td>Everything above, stored encrypted, including Garmin and COROS data</td><td>Hosting, database and backups (United States)</td></tr>
+<tr><td>Twilio</td><td>Your phone number and the texts, which can include summaries of your runs</td><td>Sends and receives texts</td></tr>
+<tr><td>Garmin, if you connect it</td><td>Your approval of the connection</td><td>Sends Kip your activities</td></tr>
+<tr><td>COROS, if you connect it</td><td>Your approval of the connection</td><td>Lets Kip read your runs</td></tr>
+<tr><td>Open-Meteo</td><td>An approximate location (about 1 km, worked out from where your runs start), or a city name for a trip</td><td>Weather forecasts</td></tr>
+<tr><td>Google or Apple, if you connect a calendar</td><td>Kip's read request</td><td>Reads your busy times</td></tr>
+</table>
+<p><strong>We do not sell your data</strong>, including Garmin data, and we do not share it with anyone beyond the list above. We do not sell or share your phone number, SMS opt-in data or personal information with third parties for marketing purposes. We do not use your data for advertising.</p>
 
-<h2>Contact</h2>
-<p>Max Sauers LLC, <a href="mailto:maxwellsauers@gmail.com">maxwellsauers@gmail.com</a>.</p>
+<h2>Your choices and rights</h2>
+<ul>
+<li><strong>Access and export:</strong> email us, and we send you a copy of everything we hold about you (your runs and files, rules, plans and messages), within 30 days.</li>
+<li><strong>Correct:</strong> tell Kip by text ("that run was a workout", "my email is …") or email us.</li>
+<li><strong>Delete:</strong> text <strong>"delete my data"</strong>. Kip explains what will be deleted and asks you to confirm. Once you confirm, everything we hold about you is deleted: runs, files, rules, plans, connections and messages, and Kip disconnects from Garmin and COROS. Copies in our nightly backups age out within 30 days. Twilio keeps its own record of texts under its policies.</li>
+<li><strong>Stop texts:</strong> text <strong>STOP</strong> at any time; START to resume. Text HELP for help.</li>
+<li><strong>Withdraw consent:</strong> see the AI transparency statement above.</li>
+</ul>
+<p>We keep your data while you use Kip, and delete it when you ask.</p>
 
+<h2>Security</h2>
+<p>Data is stored on a private server with no open network ports, encrypted at rest. Watch and calendar logins are encrypted separately. Backups are encrypted in private storage. Only Max Sauers LLC has access.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date above changes, and you will get a text about any significant change. Questions or requests: Max Sauers LLC, maxwellsauers@gmail.com.</p>
 <p><a href="index.html">Home</a> | <a href="terms.html">Terms &amp; Conditions</a></p>
 </body>
 </html>
